@@ -10,7 +10,7 @@
         window.matchMedia(`(prefers-color-scheme: ${s})`).matches) || "";
     }
 
-    document.body.classList.add(prefersColorScheme);
+    // document.body.classList.add(prefersColorScheme);
   });
   </script>
 

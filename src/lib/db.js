@@ -14,7 +14,7 @@ class ADB {
     this.data = DATA;
     this.password = password;
 
-    console.dir(this.data);
+    // console.dir(this.data);
   }
 
   getByID(id) {

@@ -1,22 +1,25 @@
-import adapter from '@sveltejs/adapter-auto';
-import { default as adapterStatic} from '@sveltejs/adapter-static';
+import { default as adapterAuto } from '@sveltejs/adapter-auto';
+// import { default as adapterStatic} from '@sveltejs/adapter-static';
+import { default as adapterNetlify } from '@sveltejs/adapter-netlify';
+
 
 import { mdsvex } from 'mdsvex';
 
 const kitConfigs = {
-  dev: {
-    adapter,
-    base: ''
+  development: {
+    adapter: adapterAuto,
+    base: "",
+    settings: {}
   },
-  "static": {
-    adapter: adapterStatic,
-    base: '/ptwd-sveltedemo'
+
+   production: {
+     adapter: adapterNetlify,
+     base: "",
+     settings: {}  // TODO
+   }
   }
-};
 
-const kitConfig = (process.env.NODE_ENV === 'production') ?
-  kitConfigs.static : kitConfigs.dev;
-
+  let kitConfig = kitConfigs[process.env.NODE_ENV];
 
 const config = {
 
@@ -32,10 +35,10 @@ const config = {
     // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
     // If your environment is not supported or you settled on a specific environment, switch out the adapter.
     // See https://kit.svelte.dev/docs/adapters for more information about adapters.
-    adapter: kitConfig.adapter(),
+    adapter: kitConfig.adapter(kitConfig.settings),
 
     paths: {
-      base: kitConfig.base,
+      base: kitConfig.base || "",
     }
 
   }
