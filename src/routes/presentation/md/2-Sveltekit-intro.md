@@ -6,7 +6,9 @@ next: 3-Project-startup
 
 ## Sveltekit - a Fremework for building web application in Svelte
 
- ### More like Next?
+ [Generally works with web standards](https://kit.svelte.dev/docs/web-standards)
+
+ ### More like Next
 
  - filesystem-based routing
  - SSR (or CSR)

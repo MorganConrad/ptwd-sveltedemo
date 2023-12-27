@@ -6,6 +6,7 @@
   let disarmCode = "";
 
   $: saved = (disarmCode === "007");
+
 	//$: color = saved ? "green" : (count < 10) ? "red" : (count < 30)  ? "yellow" : "white";
 	$: color = getColor(count, saved);  // better: you can call functions
 
@@ -43,9 +44,15 @@
   .green {
     background-color: lightgreen;
   }
+
+  main {
+    margin-left: 2rem;
+  }
+
 </style>
 
 
+<main>
 <h2>Time for you to die 007!</h2>
 <button on:click={startCountdown}> Start Game</button>
 
@@ -62,3 +69,4 @@
   <h3> BOOM! </h3>
 {/if}
 
+</main>

@@ -1,7 +1,7 @@
 # ptwd-sveltedemo
-Svelte - Sveltekit Demo for PTWD Meetup
 
-
+Svelte - Sveltekit Demo for [Port Townsend Web Developers Meetup](https://www.meetup.com/port-townsend-web-developers-meetup/)
+_Mainly_ an example Rare Book Store, but lots or other stuff for illustration.
 
 ## Install and Run
 
@@ -85,3 +85,17 @@ npm run dev
    - POST for form actions (Buy and Return a book)
      - notice the redirect, this was hard to figure out.
 
+
+### Routes that are not part of the "Book Store"
+
+#### src/presentation
+
+ - unrelated to the "store", slides for a presentation
+ - Example of how one would structure a Markdown blog
+   - md folder has the files
+   - onf folder lists them
+   - [slug] is dynamic path to an individual "blog article"
+
+#### game
+
+ - Demo of a highly "reactive" game using simple Svelte

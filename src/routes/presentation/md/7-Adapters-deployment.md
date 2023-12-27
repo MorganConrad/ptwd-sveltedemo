@@ -10,6 +10,17 @@ Before a "real" build, you must _adapt_ it for your deployment target, using a s
 
 Some adapters may have access to additional information about the request. For example, Cloudflare Workers can access an env object containing KV namespaces etc.
 
+The [adapters](https://kit.svelte.dev/docs/adapters) have a lot of small differences and "gotchas".
+
+ - They definitely violate the Liskov Substitution Principle!
+   - static sites
+   - a full server (e.g. node)
+   - Jamstack
+ - options about prerendering, SSR, CSR, trailing slash...
+ - You may also need to add a few special parameters or files, _e.g._
+   - `.nojekyl`, `netlify.toml`
+   - where to place or run serverless functions
+
 ## Official Adapters
  - @sveltejs/adapter-cloudflare for Cloudflare Pages
  - @sveltejs/adapter-cloudflare-workers for Cloudflare Workers

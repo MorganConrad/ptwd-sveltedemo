@@ -8,7 +8,11 @@
   console.dir(data);
 </script>
 
-
+<style>
+  main {
+    margin-left: 2rem;
+  }
+</style>
 <!--header class="mainheader">
   <h1> Boomer's Books</h1>
 

@@ -4,6 +4,7 @@
   export let data;
 
   $: book = data.books[0];
+  $: available = book.available;
 </script>
 
 
@@ -14,14 +15,21 @@
 
   <ul>
     <li>Price: {book.price}</li>
-    <li>Availablility: {book.available}</li>
+    <li>Availablility: {available}</li>
   </ul>
 
-  {#if book.available < 10}
+  {#if available < 10}
     <em>Low Availablilty, Order Now!</em>
   {/if}
 
 </section>
+
+<!--div>
+  <button on:click|preventDefault ={(e) => DB.buy(book.id)}>Buy</button>
+
+  <button on:click|preventDefault ={(e) => DB.restock(book.id)}>Return</button>
+</div-->
+
 
 <form method="POST" action="?/buy" use:enhance>
 <button type="Submit">Buy</button>

@@ -1,13 +1,14 @@
 
-export async function load() {
 
-  console.log("layout.js");
+export async function load() {
 
   let status = {
     userName: "John Doe",
     language: "fr",
-    prefersDark: false
   }
+
+  // console.dir(status);
 
   return { status };
 }
+

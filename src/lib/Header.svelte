@@ -14,7 +14,7 @@
   .mainheader {
     background-color: goldenrod;
     border: 2px solid blue;
-    height: 160px;
+    height: 15rem;
   }
 </style>
 

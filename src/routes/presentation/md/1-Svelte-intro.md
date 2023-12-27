@@ -18,18 +18,17 @@ next: 2-Sveltekit-intro
  - HTML, CSS, JS
  - a few extensions and rare syntaxes: "_almost_ vanilla JS"
  - uses the real DOM:
-
  - _more approachable_
  - TypeScript support (also JSDoc support)
 
- ### Uses the "real" DOM
+### Uses the "real" DOM
   - Tools such as D3.js and Svelte work together
-  - you seldom need Svelte specific library.
+  - you seldom need a Svelte specific library.
 
 ### Other Advantages (at least, claimed advantages)
  - less boilerplate
  - reactivity built in: no need for boilerplate "hooks"
- - easier to "Sveltify" vanilla JS cause Svelte is closer to vanilla JS
+ - easier to "Sveltify" vanilla JS because Svelte is closer to vanilla JS
  - built in testing-library/svelte
 
 ### Disadvantages

@@ -32,14 +32,17 @@ class ADB {
     this.data[id].available += count;
     this.data[id] = this.data[id];
     this.data = this.data;
+    console.log("available is now " + this.data[id].available);
   }
 
   buy(id, count = 1) {
-    this.data[id].available -= count;
+    console.log("buy " + id)
+    this.change(id, -count);
   }
 
   restock(id, count = 1) {
-    this.data[id].available += count;
+    console.log("restock " + id)
+    this.change(id, -count);
   }
 
   // forceUpdate() {

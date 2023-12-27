@@ -10,27 +10,25 @@ npm create svelte@latest my-project-name
    (will ask questions about TypeScript, project type, etc.)
 cd my-project-name
 npm install
-npm run dev
+npm run dev   (hot reloading etc...)
 ```
 
 ## Folders
 
-### static
+### static/
 
  - available from other web pages
  - mainly images, CSS files
 
-### src  main part of the app
+### src/  the main part of the app
 
-
- - routes/
  - app.html - base HTML
 
-#### lib/
+#### src/lib/
  - shared .js files, .svelte components
  - access via `$lib/...` so no need for `../../../lib/foo.js`
 
-#### routes/
+#### src/routes/
  - folder based routing
  - +page.svelte: home or landing page (i.e. index.html on most sites)
  - +error.svelte: if you want
