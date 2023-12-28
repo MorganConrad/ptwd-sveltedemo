@@ -1,6 +1,10 @@
 <script>
 
-  export let prefersColorScheme = "";
+  // Data usually flows down.
+  // To get downstream data, use $app/stores.page.data
+	import { page } from '$app/stores';
+
+  let prefersColorScheme = "";
 
   import { onMount } from 'svelte';
 
@@ -10,8 +14,14 @@
         window.matchMedia(`(prefers-color-scheme: ${s})`).matches) || "";
     }
 
-    // document.body.classList.add(prefersColorScheme);
+    // set color scheme for now...
+     document.body.classList.add(prefersColorScheme);
   });
-  </script>
+
+</script>
+
+<svelte:head>
+	<title>{$page.data.pageTitle || "Boomer's Books and Dog Treats"}</title>
+</svelte:head>
 
 <slot />

@@ -22,7 +22,7 @@ npm run dev   (hot reloading etc...)
 
 ### src/  the main part of the app
 
- - app.html - base HTML
+ - [app.html](https://raw.githubusercontent.com/MorganConrad/ptwd-sveltedemo/main/src/app.html) - base HTML
 
 #### src/lib/
  - shared .js files, .svelte components
@@ -36,7 +36,7 @@ npm run dev   (hot reloading etc...)
 
 ## files
 
- - svelte.config.js
+ - [svelte.config.js](https://raw.githubusercontent.com/MorganConrad/ptwd-sveltedemo/main/svelte.config.js)
    - preprocessing (e.g. mdsvex)
    - aliases for easier folder finding  (`$lib` is standard)
    - "adapter"

@@ -1,6 +1,6 @@
 <script>
 
-  /* /+page.svelte */
+  /* /+page.svelte  (root landing page) */
 </script>
 
 <section>
@@ -9,6 +9,8 @@
   <ul>
     <li><a href="/books">Rare Books</a></li>
     <li><a href="/dogtreats">Dog Treats (under construction!)</a></li>
+    <li><a href="/game">A Fun Game</a></li>
+    <li><a href="/presentation">PTWD Presentation</a></li>
   </ul>
 
 </section>

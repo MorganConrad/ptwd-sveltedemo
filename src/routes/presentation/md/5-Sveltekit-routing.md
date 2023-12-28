@@ -4,7 +4,7 @@ prev: 4-YourFirstSvelteComponent
 next: 6-Sveltekit-routing2
 ---
 
-## Folder Based
+## Folder Based (Only)
 
  - breaking change from earlier where about.svelte, help.svelte were possible
  - when you see the file organization you will understand
@@ -34,7 +34,8 @@ next: 6-Sveltekit-routing2
 
 ## +layout.js or +layout.server.js
 
- - provides data for layout.svelte
+ - provides data for layout.svelte via `load()`
+ - again, _.server.js_ means it must run on the server
 
 ## +server.js
 

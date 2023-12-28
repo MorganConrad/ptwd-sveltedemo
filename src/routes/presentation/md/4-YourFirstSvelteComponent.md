@@ -23,7 +23,7 @@ Then, just write some HTML, use { } for templating,  Handlebars-like but subtle 
 
 ```
 
-## A fuller Example: /game/+page.svelte
+## A fuller Example: [/game/+page.svelte](https://raw.githubusercontent.com/MorganConrad/ptwd-sveltedemo/main/src/routes/game/%2Bpage.svelte)
 
 ### `<script> ... </script>`  (simplified)
 
@@ -65,6 +65,6 @@ You may handle these in your `<script>` tag
  - beforeUpdate() afterUpdate()
  - tick()
 
-### Components
+### Component Nesting
 
 For components that have children e.g. a layout, use a `<slot />`

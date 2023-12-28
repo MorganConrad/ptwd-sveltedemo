@@ -8,9 +8,10 @@ next: 8-Other-resources
 During development (`npm run dev`), you use a NodeJS environment.
 Before a "real" build, you must _adapt_ it for your deployment target, using a small plugin in svelte.config.js.
 
-Some adapters may have access to additional information about the request. For example, Cloudflare Workers can access an env object containing KV namespaces etc.
+- `npm run build` builds
+- `npm run preview` to preview on your development machine
 
-The [adapters](https://kit.svelte.dev/docs/adapters) have a lot of small differences and "gotchas".
+The [adapters](https://kit.svelte.dev/docs/adapters) have a lot of small differences and minor "gotchas".
 
  - They definitely violate the Liskov Substitution Principle!
    - static sites
@@ -19,7 +20,7 @@ The [adapters](https://kit.svelte.dev/docs/adapters) have a lot of small differe
  - options about prerendering, SSR, CSR, trailing slash...
  - You may also need to add a few special parameters or files, _e.g._
    - `.nojekyl`, `netlify.toml`
-   - where to place or run serverless functions
+   - site specific options, e.g. environment, serverless functions
 
 ## Official Adapters
  - @sveltejs/adapter-cloudflare for Cloudflare Pages

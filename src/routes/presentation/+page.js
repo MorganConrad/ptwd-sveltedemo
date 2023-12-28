@@ -1,5 +1,9 @@
 
-/** /presentation/_page.js    load all md files in presentation */
+/** /presentation/+page.js
+
+   incantation to load all .md files in presentation
+   import.meta.glob is a vite thing...
+ */
 
 export async function load() {
   const allPostFiles = import.meta.glob('/src/routes/presentation/md/*.md');
@@ -8,7 +12,6 @@ export async function load() {
   const posts = await Promise.all(
     iterablePostFiles.map(async ([path, resolver]) => {
       const { metadata } = await resolver();
-      // const postPath = path.path.slice(11, -3);
 
       return {
         meta: metadata,
@@ -17,6 +20,9 @@ export async function load() {
     })
   );
 
-  return { posts };
+  return {
+    posts,
+    pageTitle: "Presentation"
+  };
 
 }

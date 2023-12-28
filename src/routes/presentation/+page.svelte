@@ -1,8 +1,5 @@
-
 <script>
-  export let data
-
-  // onsole.dir(data, {depth:99});
+  export let data;
 </script>
 
 <h2>Presentation</h2>

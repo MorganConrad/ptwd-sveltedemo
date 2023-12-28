@@ -16,9 +16,10 @@ export async function load({params, fetch}) {
   const response = await fetch(`/api/books/${id}`);
   let { books } = await response.json();  // No error checking
 
-  console.dir(books);
-
-  return { books }
+  return {
+    books,
+    pageTitle: books[0].title
+  }
 }
 
 /* Form actions - they use the helper buysell() below */

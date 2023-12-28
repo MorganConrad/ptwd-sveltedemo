@@ -6,7 +6,7 @@ next: 7-Adapters-deployment
 
 ## Special Folder Names
 
- *Note*
+ *Notes*
   - more specific routes will be _tested first_.
   - You can add parameter matchers (e.g. regex) for fancy stuff
 
@@ -34,11 +34,11 @@ next: 7-Adapters-deployment
 
 
 
-## the load() function
+## More on the `load()` function
 
 To help you navigate through all these routes, the `load()` function is passed a kitchen sink of stuff
 
- Typically destructured at call time, e.g.  `load({ foo, bar}) { ... }`
+ Typically destructured at call time, e.g.  `load({ cookies, params })`
 
  - cookies
  - url

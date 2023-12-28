@@ -15,12 +15,13 @@
     background-color: goldenrod;
     border: 2px solid blue;
     height: 15rem;
+    padding-left: 2rem;
   }
 </style>
 
 
 <header class="mainheader">
-  <h1> {titles[status.language]}</h1>
+  <a href="/books"><h2> {titles[status.language]}</h2></a>
 
   <nav class="breadcrumb">
     <a href="/">Home</a>

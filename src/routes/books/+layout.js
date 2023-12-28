@@ -7,8 +7,6 @@ export async function load() {
     language: "fr",
   }
 
-  // console.dir(status);
-
   return { status };
 }
 

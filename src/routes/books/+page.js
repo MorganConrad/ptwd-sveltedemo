@@ -13,5 +13,8 @@ export async function load({ params, fetch, url }) {
 
   // console.dir(books);
 
-  return { books }
+  return {
+    books,
+    pageTitle: "All Books Available"
+  }
 }

@@ -6,12 +6,14 @@ next: 2-Sveltekit-intro
 
 ## Svelte's Approach
 
+"A UI framework that uses a compiler to let you write breathtakingly concise components that do minimal work in the browser, using languages you already know — HTML, CSS and JavaScript..."
+
 ### Compiled.
  - Produces highly optimized _vanilla JavaScript_.
  - smaller application bundles and better performance
    - 1.7KB vs. Reacts 44.5KB
    - helps with PWAs
-   - TODO: add link to (Benchmarks)
+   - fares well on most benchmarks
  - _more approachable_
 
 ### Sticks closely to the classsic web development model
@@ -34,7 +36,6 @@ next: 2-Sveltekit-intro
 ### Disadvantages
  - Younger than React, Vue, Angular etc... => smaller ecosystem
  - minor language differences on events, templating, etc.
-
 
 ## Where it's good
 

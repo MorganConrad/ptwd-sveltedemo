@@ -5,7 +5,6 @@
 
   export let data;
 
-  console.dir(data);
 </script>
 
 <style>
@@ -13,7 +12,9 @@
     margin-left: 2rem;
   }
 </style>
-<!--header class="mainheader">
+
+
+<!--header class="mainheader">  moved to the Header component below
   <h1> Boomer's Books</h1>
 
   <nav class="breadcrumb">
