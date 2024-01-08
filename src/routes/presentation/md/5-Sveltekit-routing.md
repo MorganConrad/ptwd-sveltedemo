@@ -21,6 +21,7 @@ next: 6-Sveltekit-routing2
  - _.server.js_ means this must run on a server to _protect secrets_
    - can only return serializable JSON
    - no access to window, document, etc...
+   - may or may not have access to file system
  - else it is a "universal" load function, with more options
    - varies by adapter, a bit confusing...
  - you can also use the page's `onMount()`, but page may "flicker" and reload.

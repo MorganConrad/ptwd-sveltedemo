@@ -1,7 +1,7 @@
 ---
 title: Resources and Tutorials
 prev: 7-Adapters-deployment
-next: 9-Conclusion
+next: 9-APainPoints
 ---
 
 ## Tutorials, Resources
@@ -27,6 +27,7 @@ next: 9-Conclusion
    - https://joyofcode.xyz/using-sveltekit-endpoints
  - [Josh Collinsworth &#x1F44D;](https://joshcollinsworth.com/)
  - [Deep Web Works](https://svelte.deepwebworks.com/)
+ - [Svelte By Example](https://sveltebyexample.com/)
  - [SveltePress](https://sveltepress.site/)
  - [Stanislav Khromov: Missing Guide to adapter-static &#x1F44D;](https://khromov.se/the-missing-guide-to-understanding-adapter-static-in-sveltekit/)
 

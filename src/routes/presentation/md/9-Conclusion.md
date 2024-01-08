@@ -1,6 +1,6 @@
 ---
 title: Conclusions and Opinions
-prev: 8-Other-resources
+prev: 9-APainPoints
 ---
 
 ## Mainly vs. React of course

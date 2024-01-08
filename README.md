@@ -1,9 +1,16 @@
 # ptwd-sveltedemo
 
 Svelte - Sveltekit Demo for [Port Townsend Web Developers Meetup](https://www.meetup.com/port-townsend-web-developers-meetup/)
-_Mainly_ an example Rare Book Store, but lots or other stuff for illustrating a variety of options and techniques.  Not necessarily the "best" design.
+
+This is a bit of a mish-mash illustrating the many possibilities of SvelteKit.  It is definitely not intended as an example of "good design".  The major routes:
+
+ - `/books` an example Rare Book Store
+ - `/presentation` the PTWD presentation, but also an example of a blog
+ - `/game` a simple game showing reactivity on a web page
 
 [A version of this might be online at Netlify](https://pensive-hugle-9e5891.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/46e07044-1e46-4fb0-8b95-0ac51772a14c/deploy-status)](https://app.netlify.com/sites/pensive-hugle-9e5891/deploys)
 
 ## Install and Run
 

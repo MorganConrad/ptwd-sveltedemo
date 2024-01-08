@@ -8,6 +8,8 @@ next: 3-Project-startup
 
 "SvelteKit is a framework for rapidly developing robust, performant web applications using Svelte. If you're coming from React, SvelteKit is similar to Next. If you're coming from Vue, SvelteKit is similar to Nuxt."
 
+"a meta-framework to build full-stack web applications with Svelte."
+
  [Generally works with web standards](https://kit.svelte.dev/docs/web-standards)
 
  ### More like Next / Nuxt
