@@ -8,12 +8,17 @@ next: 7-Adapters-deployment
 
  *Notes*
   - more specific routes will be _tested first_.
-  - You can add parameter matchers (e.g. regex) for fancy stuff
+  - "Parameter matchers" (e.g. regex) allow even fancier stuff
 
 ### [name]
 
  - A "dynamic" route
  - name is often something like slug, id
+
+### [...rest]
+
+ - variable length dynamic parameters, "rest" or "varargs"
+ - I had some null issues with this, probably my fault
 
 ### [[name]]
 
@@ -21,10 +26,6 @@ next: 7-Adapters-deployment
  - e.g. for locale
    - `/fr/path...`   `/de/path...`
    - but a default `/path...` for English
-
-### [...rest]
-
- - variable length dynamic parameters, "rest" or "varargs"
 
 ### (vname)
 
@@ -34,7 +35,7 @@ next: 7-Adapters-deployment
 
 
 
-## More on the `load()` function
+## More on thse `load()` function
 
 To help you navigate through all these routes, the `load()` function is passed a kitchen sink of stuff
 

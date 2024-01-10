@@ -1,16 +1,6 @@
 
 /** /books/[id]/+page.server.js  */
 
-/* In a real app you'd probably be using this code
-   in page.SERVER.js  so as to protect any database secrets
-
-   Also, only a server can use form actions
-
-   For the demo we use +page.js instead for simplicity
-*/
-
-//  not for actions!   export const prerender = true;
-
 export async function load({params, fetch}) {
   let id = params.id || "";
   const response = await fetch(`/api/books/${id}`);

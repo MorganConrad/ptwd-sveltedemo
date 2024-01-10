@@ -2,14 +2,13 @@
 <script>
 
   // four reactive variables: count, disarmCode, saved, and color
-	let count = 40;
+  let count = 40;
   let disarmCode = "";
 
   $: saved = (disarmCode === "007");
 
-	//$: color = saved ? "green" : (count < 10) ? "red" : (count < 30)  ? "yellow" : "white";
-	$: color = getColor(count, saved);  // better: you can call functions
-
+	// $: color = saved ? "green" : (count < 10) ? "red" : (count < 30)  ? "yellow" : "white";
+  $: color = getColor(count, saved);  // better: you can call functions
 
 
   function startCountdown() {

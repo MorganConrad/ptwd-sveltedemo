@@ -6,7 +6,7 @@ next: 8-Other-resources
 ---
 
 During development (`npm run dev`), you use a NodeJS environment.
-Before a "real" build, you must _adapt_ it for your deployment target, using a small plugin in svelte.config.js.
+Before a "real" build, you must _adapt_ it for your deployment target, using a module imported in svelte.config.js.
 
 - `npm run build` builds
 - `npm run preview` to preview on your development machine
@@ -15,8 +15,8 @@ The [adapters](https://kit.svelte.dev/docs/adapters) have a lot of small differe
 
  - They definitely violate the Liskov Substitution Principle!
    - static sites
-   - a full server (e.g. node)
-   - Jamstack
+   - a "real" server (e.g. node, deno)
+   - [Jamstack](https://en.wikipedia.org/wiki/Jamstack) (e.g. Netlify, Vercel)
  - options about prerendering, SSR, CSR, trailing slash...
  - You may also need to add a few special parameters or files, _e.g._
    - `.nojekyl`, `netlify.toml`

@@ -12,7 +12,7 @@ next: 3-Project-startup
 
  [Generally works with web standards](https://kit.svelte.dev/docs/web-standards)
 
- ### More like Next / Nuxt
+ ### Much like Next / Nuxt
 
  - filesystem-based routing
  - SSR (or CSR)
@@ -23,13 +23,10 @@ next: 3-Project-startup
 
 ### Replaces "Sapper", with some breaking changes and confusions...
 
-
-### Advantages
-
- - easier to build Jamstack web applications
+ - SvelteKit 1.0 released December 2022
 
 
-### There is aso a Svelte Native
+### There is also a Svelte Native
 
 
 

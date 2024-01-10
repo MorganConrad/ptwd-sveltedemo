@@ -9,8 +9,6 @@ export async function GET( { params, request } ) {
 
   // for a "real" API you might look at the request queryParams...
   let books = DB.getByQuery();
-  // console.dir(books);
-
 
   let response = {
     date: new Date().toISOString(),

@@ -1,3 +1,10 @@
+
+/*
+  Most scripts I see online import these as "adapter"
+  and comment out the other lines.
+  This requires less editing and remembering to edit!
+*/
+
 import { default as adapterAuto } from '@sveltejs/adapter-auto';
 // import { default as adapterStatic} from '@sveltejs/adapter-static';
 import { default as adapterNetlify } from '@sveltejs/adapter-netlify';

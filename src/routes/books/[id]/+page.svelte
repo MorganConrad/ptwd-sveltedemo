@@ -24,12 +24,6 @@
 
 </section>
 
-<!--div>
-  <button on:click|preventDefault ={(e) => DB.buy(book.id)}>Buy</button>
-
-  <button on:click|preventDefault ={(e) => DB.restock(book.id)}>Return</button>
-</div-->
-
 
 <form method="POST" action="?/buy" use:enhance>
 <button type="Submit">Buy</button>

@@ -1,6 +1,6 @@
 # ptwd-sveltedemo
 
-Svelte - Sveltekit Demo for [Port Townsend Web Developers Meetup](https://www.meetup.com/port-townsend-web-developers-meetup/)
+Svelte - Sveltekit Demo for the Jan 10 2024 [Port Townsend Web Developers Meetup](https://www.meetup.com/port-townsend-web-developers-meetup/)
 
 This is a bit of a mish-mash illustrating the many possibilities of SvelteKit.  It is definitely not intended as an example of "good design".  The major routes:
 
@@ -34,7 +34,7 @@ npm run dev
    - framework HTML.
    - good place to put global CSS files (this uses Chota.css for some basic styling)
    - SEO meta tags could go here
-   - there are modules to do SEO for you and place into `%sveltekit.head%`
+     - there are modules to help with SEO via `%sveltekit.head%`
 
  - **+page.svelte**
    - landing page
@@ -57,22 +57,17 @@ npm run dev
 
  - [Mdsvex](https://mdsvex.pngwn.io/) preprocessor concerts these +page.md files to Svelte
 
-#### Necronomicon
-
- - Demo of a manually created page.
- - _Wrong way to do it_, tedious, not at all scalable
-
 #### books
 
- - The "right way" to do it
+ - Demo of a site that sells products
  - **+layout.svelte:** a layout template for _all_ pages about books (and subfolders)
- - **+page.js:** retrieves books from the API and puts them into +page.svelte's `data`
+ - **+page.js:** retrieves all books from the API and puts them into +page.svelte's `data`
  - **+page.svelte:** demonstrates the `{#each}` to list all books.
 
 #### books/[id]
 
  - `[id]` in brackets means this is a variable path parameter
-   - doesn't need to be "id", could use "uid", "ISBN", "foo", whatever...
+   - doesn't need to be "id", could use "uid", "ISBN", "slug", whatever...
  - **+page.server.js:**
    - loads data from the "backend DB API"  (see below)
    - `*.server.js` means this _must run on the server_ to _protect secrets_

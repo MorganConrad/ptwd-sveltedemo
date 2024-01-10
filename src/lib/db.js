@@ -1,3 +1,5 @@
+/* Lame "database" */
+
 const DATA = {
   "B1": { id: "B1", title: "Declaration of Independence", author: "Jefferson, Thomas", price: 99.99, available: 26},
   "B2": { id: "B2", title: "First Folio", author: "Shakespeare, William", price: 99.99, available: 760},
@@ -21,11 +23,11 @@ class ADB {
     return [this.data[id]];
   }
 
+  // TODO
   getByQuery(query) {
     let books = Object.values(this.data).filter((b) => true);
     return books;
   }
-
 
 
   change(id, count = -1) {
@@ -44,10 +46,6 @@ class ADB {
     console.log("restock " + id)
     this.change(id, -count);
   }
-
-  // forceUpdate() {
-  //   this.data = this.data;
-  // }
 
 }
 

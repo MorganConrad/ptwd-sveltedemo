@@ -13,42 +13,35 @@ next: 2-Sveltekit-intro
 ### Compiled.
  - Produces highly optimized _vanilla JavaScript_.
  - smaller application bundles and better performance
-   - 1.7KB vs. Reacts 44.5KB
-   - helps with PWAs
-   - fares well on most benchmarks
- - _more approachable_
+   - 1.7KB vs. React's 44.5KB
+   - fares very well on most benchmarks
 
-### Sticks closely to the classsic web development model
+### Sticks closely to classic web development model
  - HTML, CSS, JS
  - a few extensions and rare syntaxes: "_French_ Vanilla JS"
  - uses the real DOM:
- - _more approachable_
+   - Tools such as D3.js and Svelte work together
+   - you seldom need a Svelte specific library.
+ - _more approachable?_
  - TypeScript support (also JSDoc support, they are moving away from TS)
 
-### Uses the "real" DOM
-  - Tools such as D3.js and Svelte work together
-  - you seldom need a Svelte specific library.
-
 ### Other Advantages (at least, claimed advantages)
- - less boilerplate
- - reactivity built in: no need for boilerplate "hooks"
+ - reactivity built in: less boilerplate "hooks"
  - easier to "Sveltify" vanilla JS because Svelte is closer to vanilla JS
  - built in testing-library/svelte
 
 ### Disadvantages
  - Younger than React, Vue, Angular etc... => smaller ecosystem
- - support via Discord
+ - support via Discord (some have complained)
  - minor language differences on events, templating, etc.
 
-## Where it's good
-
- - Web applications intended for low-power devices
- - data-visualizations that need to display a large number of DOM elements
- - Smaller projects
- - Onboarding people with basic web development knowledge
-
-### Caveat
-- Svelte 5 is soon to be released... (@latest is 4.2.8)
+### History & Notes
+- Open Source, compiler written in Javascript / TS
+- v1 late 2016, based on Ractive.js
+- v2 2018, `{{ }} -> {}`
+- v3 2019, written in Typescript, easier reactivity
+- v4 2023, "maintenance" for speed, TS -> JS + JSDoc
+- v5 coming soon, will add Runes, another way of doing reactivity
 
 Much of this taken from [MDN](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started)
 

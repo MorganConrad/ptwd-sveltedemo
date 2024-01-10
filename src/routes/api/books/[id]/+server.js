@@ -29,7 +29,6 @@ export async function POST( { params, request } ) {
   console.log(`api/books/[id].POST ${id} ${delta}`);
 
   DB.change(id, delta);
-  let books = DB.getByID(id);
 
   return redirect(303, `/books/${id}`);
 
